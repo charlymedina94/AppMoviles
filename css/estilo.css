@@ -1,0 +1,74 @@
+﻿body {
+    display: grid;
+  
+    grid-template-areas:
+      "header header header"
+      "nav content side"
+      "footer footer footer";
+  
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+  
+    height: 100vh;
+  }
+
+
+  header {
+    grid-area: header;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    grid-area: nav;
+    margin-left: 0.5rem;
+    margin-bottom: 100px;
+  }
+  
+  main {
+    grid-area: content;
+    margin-bottom: 100px;
+    width: 100%
+  }
+  
+  
+  footer {
+    grid-area: footer;
+  }
+
+
+
+  .column {
+    float: left;
+    width: 30%;
+    margin: 0,5%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .centro{
+    text-align: center;
+  }
+
+
+  .cabecera img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cabecera h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+img{
+  width: 90%;
+}
