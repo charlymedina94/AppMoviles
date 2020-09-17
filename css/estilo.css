@@ -3,7 +3,8 @@
   
     grid-template-areas:
       "header header header"
-      "nav content side"
+      "nav nav nav"
+      "content content content"
       "footer footer footer";
   
     grid-template-columns: 200px 1fr 200px;
@@ -17,31 +18,34 @@
   header {
     grid-area: header;
     margin-bottom: 20px;
+    background-color: hotpink;
+    
   }
   
   nav {
-    grid-area: nav;
-    margin-left: 0.5rem;
-    margin-bottom: 100px;
+    grid-area: nav;   
+    background-color: cadetblue;
   }
   
   main {
     grid-area: content;
-    margin-bottom: 100px;
-    width: 100%
+    width: 100%;
+    background-color: burlywood;
   }
   
   
   footer {
     grid-area: footer;
+    background-color: coral;
   }
 
 
 
   .column {
-    float: left;
-    width: 30%;
+    float: right;
+    width: 33%;
     margin: 0,5%;
+   
   }
   
   /* Clear floats after the columns */
@@ -71,4 +75,45 @@
 
 img{
   width: 90%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-left: 1%;
+  margin-left: 1%;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo{
+  margin-left: 1%;
+}
+
+
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+.margenEncuesta{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+label{
+  margin-top: 30%;
 }
