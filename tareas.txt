@@ -2,7 +2,6 @@ Ejercicio 2 – JavaScript
 Incorporar las funciones JavaScript necesarias para realizar las siguientes validaciones sobre los datos
 ingresados por el usuario en el formulario.
 
- Los campos nombre y apellido sólo pueden aceptar caracteres de la “a-z” y “A-Z”.
  La fecha de nacimiento debe tener formato dd-mm-aaaa
  El email debe tener formato de mail correcto.
 Aclaración: no se deben usar las validaciones por HTML5.

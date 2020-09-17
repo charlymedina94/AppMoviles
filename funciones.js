@@ -73,3 +73,17 @@ function validacion() {
     return true;
   }
 
+
+//Validacion solo letras en campos Nombre y Apellido
+
+function soloText(string) {//solo letras 
+    var out = '';
+    //Se añaden las letras validas
+    var filtro = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';//Caracteres validos
+
+    for (var i = 0; i < string.length; i++)
+        if (filtro.indexOf(string.charAt(i)) != -1)
+            out += string.charAt(i);
+    return out;
+}
+
