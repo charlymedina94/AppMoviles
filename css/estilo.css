@@ -117,3 +117,7 @@ input, select, textarea {
 label{
   margin-top: 30%;
 }
+
+.margenTop{
+  margin-top: 1%;
+}

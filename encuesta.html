@@ -49,19 +49,19 @@
                     <form action="javascript:encuesta();">
 
                         <label>Nombre</label>
-                        <input id="nombre" type="text" placeholder="Introducir nombre" required>
+                        <input id="nombre" type="text" placeholder="Introducir nombre">
                         
                      
                         <label>Apellido</label>
-                        <input id="apellido" type="text" placeholder="Introducir apellido" required>
+                        <input id="apellido" type="text" placeholder="Introducir apellido">
                       
 
                         <label>Fecha de Nacimiento</label>
-                        <input id="fecha" type="date" required>
+                        <input id="fecha" type="date">
                        
 
                         <label>Sexo</label>
-                        <select name="sexo" id="sexo" required>
+                        <select name="sexo" id="sexo">
                             <option value="elegir">Elegir...</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
@@ -69,7 +69,7 @@
                   
 
                         <label>Valoracion de la página</label>
-                        <select name="valoracion" id="valoracion" required>
+                        <select name="valoracion" id="valoracion">
                             <option value="elegir">Elegir...</option>
                             <option value="Lamentable">Lamentable</option>
                             <option value="Podria">Podría ser mejor</option>
@@ -79,27 +79,30 @@
                      
 
                         <label>Email</label>
-                        <input id="email" type="email" placeholder="Introducir Email" required>
+                        <input id="email" type="email" placeholder="Introducir Email">
                       
 
                         <label>Comentario</label>
                         <textarea rows="4" cols="50" name="comentario" id="comentario" placeholder="Deja un comentario..."></textarea>
                        
+                      
 
-                        <button type="reset">Restablecer valores</button>
+                        <button type="button" onclick="cancelar()">Cancelar</button>
+
+                        <button type="button" onclick="restablecer()">Restablecer valores</button>
 
                         <button type="submit">Enviar</button>
              
 
                     </form>    
-                    
+
                 </div> 
 
         </main>
       
     
-        <footer>
-         <h3 class="centro">   Desarrollado por estudiantes App Moviles. UNAJ 2020 &copy;  </h3>
+        <footer class="margenTop">
+         <h3 class="centro"> Desarrollado por estudiantes App Moviles. UNAJ 2020 &copy;  </h3>
         </footer>
 
        

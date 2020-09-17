@@ -1,0 +1,25 @@
+Ejercicio 2 – JavaScript
+Incorporar las funciones JavaScript necesarias para realizar las siguientes validaciones sobre los datos
+ingresados por el usuario en el formulario.
+
+ Los campos nombre y apellido sólo pueden aceptar caracteres de la “a-z” y “A-Z”.
+ La fecha de nacimiento debe tener formato dd-mm-aaaa
+ El email debe tener formato de mail correcto.
+Aclaración: no se deben usar las validaciones por HTML5.
+
+************* (FALTARÍA HACER ESAS VALIDACIONES EN JS) ***********
+
+
+Ejercicio 3 – JavaScript
+Agregar los siguientes eventos:
+
+ Si el usuario cancela la encuesta, debe aparecer un mensaje de confirmación con las opciones “Sí,
+deseo volver a la página anterior” y “No”. Al confirmar la acción, deberá llevar al usuario a la página
+anterior. 
+
+************(ESTA HECHO PERO NO COMO LO PIDE EL ENUNCIADO. CREO QUE NO SE PUEDE MODIFICAR LO QUE DICEN LOS BOTONES)***********
+
+
+
+
+NOTAS: CUANDO LA PAGINA SE MUESTRA EN VERSION CELULAR, EL NAVEGADOR SE AGRANDA. FIJARSE PARA QUE NO PASE.
