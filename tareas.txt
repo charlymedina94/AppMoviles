@@ -1,14 +1,3 @@
-Ejercicio 2 – JavaScript
-Incorporar las funciones JavaScript necesarias para realizar las siguientes validaciones sobre los datos
-ingresados por el usuario en el formulario.
-
- La fecha de nacimiento debe tener formato dd-mm-aaaa
- El email debe tener formato de mail correcto.
-Aclaración: no se deben usar las validaciones por HTML5.
-
-************* (FALTARÍA HACER ESAS VALIDACIONES EN JS) ***********
-
-
 Ejercicio 3 – JavaScript
 Agregar los siguientes eventos:
 
