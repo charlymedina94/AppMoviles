@@ -1,18 +1,11 @@
 ﻿body {
     display: grid;
-  
-    grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "content content content"
-      "footer footer footer";
-  
+    grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer";
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
     grid-gap: 10px;
-  
-    height: 100vh;
-  }
+    background-color:lightpink;
+}
 
 
   header {
@@ -26,12 +19,13 @@
     grid-area: nav;   
     background-color: cadetblue;
   }
-  
-  main {
+
+main {
     grid-area: content;
     width: 100%;
     background-color: burlywood;
-  }
+    height: 100vh;
+}
   
   
   footer {
