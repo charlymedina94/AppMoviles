@@ -1,4 +1,6 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand&display=swap');
+
+body {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer";
     grid-template-columns: 200px 1fr 200px;
@@ -14,23 +16,53 @@
     background-color: hotpink;
     
   }
-  
-  nav {
-    grid-area: nav;   
-    background-color: cadetblue;
-  }
+
+nav {
+    grid-area: nav;
+    background-color: #d464b6;
+    font-family: Calibri;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    float: left;
+    margin-left: 1%;
+
+ 
+}
+
+ul li a{
+    text-decoration:none;
+    display:block;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background: #e6bedb;
+    }
+
 
 main {
     grid-area: content;
     width: 100%;
     background-color: burlywood;
-    height: 100vh;
+    height: 100%;
+
 }
-  
+
+
+
   
   footer {
     grid-area: footer;
-    background-color: coral;
+    background-color: #912b96;
   }
 
 
@@ -57,35 +89,27 @@ main {
 
   .cabecera img {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 8%;
+    height: 8%;
+    border: hidden;
+    padding: 10px;
+   
   }
-  
-  .cabecera h1 {
+
+.cabecera h1 {
     position: relative;
     top: 18px;
     left: 10px;
-  }
+    font-family: 'Amatic SC', cursive;  
+    font-size:70px;
+}
 
 img{
   width: 90%;
+  border:  groove;
 }
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-  margin-left: 1%;
-  margin-left: 1%;
-  align-items: center;
-  text-align: center;
-}
 
 .titulo{
   margin-left: 1%;
