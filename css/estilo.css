@@ -3,7 +3,7 @@
 body {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "content content content" "footer footer footer";
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 100px 1fr 200px;
     grid-template-rows: auto 1fr auto;
     grid-gap: 10px;
     background-color:lightpink;
@@ -138,4 +138,7 @@ label{
 
 .margenTop{
   margin-top: 1%;
+}
+footer .centro{
+    font-size:12px;
 }
