@@ -21,10 +21,7 @@ function encuesta(){
     if (validacion() == true){    
         alert("Nombre: "+document.getElementById('nombre').value +"\n"+
         "Apellido: "+document.getElementById('apellido').value +"\n"+
-
         "Fecha de nacimiento: "+ convertDate(document.getElementById('fecha').value) +"\n"+
-        //convertDate(document.getElementById('fecha').value)
-        //"Fecha de nacimiento: "+ document.getElementById('fecha').value +"\n"+
         "Sexo: "+document.getElementById('sexo').value +"\n"+
         "Valoración: "+document.getElementById('valoracion').value +"\n"+
         "Email: "+document.getElementById('email').value +"\n"+
