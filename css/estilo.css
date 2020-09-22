@@ -7,6 +7,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-gap: 10px;
     background-color:lightpink;
+    
 }
 
 
@@ -53,7 +54,7 @@ main {
     grid-area: content;
     width: 100%;
     background-color: burlywood;
-    height: 100%;
+   
 
 }
 
@@ -141,4 +142,14 @@ label{
 }
 footer .centro{
     font-size:12px;
+}
+
+section{
+  padding-top: 2%;  
+  padding-bottom: 2%;
+}
+
+
+.mainAlargado{
+  height: 100vh;
 }
