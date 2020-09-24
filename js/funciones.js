@@ -122,6 +122,7 @@ function consumirJson(){
     url: 'http://www.json-generator.com/api/json/get/bVSuwvWvTm?indent=2',
     success: function(respuesta) {
 
+
       for (var variable in respuesta) {		
 
 
@@ -234,12 +235,7 @@ function consumirJson(){
     error: function() {
           console.log("No se ha podido obtener la información");
       }
-  });
-    
-    
-    
-    
-    
+  });  
     
     /*
     
@@ -269,5 +265,3 @@ function consumirJson(){
     
   });
 */
-
-}
