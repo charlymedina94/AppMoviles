@@ -6,8 +6,12 @@
     <title>UNAJ Pastelería - Inicio</title>
     <link rel="shortcut icon"href="img/cake.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
-<body>
+
+<body onload="consumirJson()">
 
     
     <header>
@@ -23,10 +27,10 @@
     <nav>
         <div>
             <ul>
-                <li><a href="pasteles.html">Pasteles </a></li>
-                <li><a href="tartas.html">Tartas </a></li>
-                <li><a href="cupcakes.html">Cupcakes </a></li>
-                <li><a href="postres.html">Postres </a></li>
+                <li id="categoriaMenu1"><a href="pasteles.html"></a></li>
+                <li id="categoriaMenu2"><a href="tartas.html"></a></li>
+                <li id="categoriaMenu3"><a href="cupcakes.html"></a></li>
+                <li id="categoriaMenu4"><a href="postres.html"></a></li>
                 <li><a href="encuesta.html">Encuesta </a></li>
 
             </ul>
@@ -37,7 +41,7 @@
        
         <section>
 
-            <div class="titulo">
+            <div id="categoria1" class="titulo">
                 <h2>Pasteles</h2>
             </div>
 
@@ -45,21 +49,21 @@
                 <div class="row">
                     <div class="column">
                         <img src="img/pastel.jpg" />
-                        <h3>Pastel tradicional</h3>
+                        <h3 id="descripcion1"></h3>
                     </div>
                     <div class="column">
                         <img src="img/pastel2.jpg" />
-                        <h3>Pasteles de cumpleaños</h3>
+                        <h3 id="descripcion2"></h3>
                     </div>
                     <div class="column">
                         <img src="img/pastel3.jpg" />
-                        <h3>Pasteles de boda</h3>
+                        <h3 id="descripcion3"></h3>
                     </div>
                 </div>
             </article>
 
 
-            <div class="titulo">
+            <div id="categoria2" class="titulo">
                 <h2>Tartas</h2>
             </div>
 
@@ -67,21 +71,21 @@
                 <div class="row">
                     <div class="column">
                         <img src="img/tarta.jpg" />
-                        <h3>Tartas de chocolate</h3>
+                        <h3 id="descripcion4"></h3>
                     </div>
                     <div class="column">
                         <img src="img/tarta2.jpg" />
-                        <h3>Tarta de frutilla</h3>
+                        <h3 id="descripcion5"></h3>
                     </div>
                     <div class="column">
                         <img src="img/tarta3.jpg" />
-                        <h3>Tarta cheescake</h3>
+                        <h3 id="descripcion6"></h3>
                     </div>
                 </div>
             </article>
 
 
-            <div class="titulo">
+            <div id="categoria3" class="titulo">
                 <h2>Cupcakes</h2>
             </div>
 
@@ -89,21 +93,21 @@
                 <div class="row">
                     <div class="column">
                         <img src="img/Cupcake.jpg" />
-                        <h3>Cupcake chocolate</h3>
+                        <h3 id="descripcion7"></h3>
                     </div>
                     <div class="column">
                         <img src="img/Cupcake2.jpg" />
-                        <h3>Cupcake estrella</h3>
+                        <h3 id="descripcion8"></h3>
                     </div>
                     <div class="column">
                         <img src="img/Cupcake3.jpg" />
-                        <h3>Cupcake vainilla</h3>
+                        <h3 id="descripcion9"></h3>
                     </div>
                 </div>
             </article>
 
 
-            <div class="titulo">
+            <div id="categoria4" class="titulo">
                 <h2>Postres</h2>
             </div>
 
@@ -111,15 +115,15 @@
                 <div class="row">
                     <div class="column">
                         <img src="img/postre.jpg" />
-                        <h3>Postre de frutillas</h3>
+                        <h3 id="descripcion10"></h3>
                     </div>
                     <div class="column">
                         <img src="img/postre2.jpg" />
-                        <h3>Postre de chocolate</h3>
+                        <h3 id="descripcion11"></h3>
                     </div>
                     <div class="column">
                         <img src="img/postre3.jpg" />
-                        <h3>Postre de vainilla</h3>
+                        <h3 id="descripcion12"></h3>
                     </div>
                 </div>
             </article>
