@@ -18,6 +18,10 @@ body {
     
   }
 
+header img{
+    opacity:1;
+}
+
 nav {
     grid-area: nav;
     background-color: #d464b6;
@@ -68,13 +72,21 @@ main {
 
 
 
-  .column {
+
+
+.column {
     float: right;
     width: 33%;
     margin: 0,5%;
-   
-  }
-  
+}
+
+.resaltarColumn {
+    float: right;
+    width: 33%;
+    margin: 0,5%;
+    background: #e56edb;
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -140,8 +152,8 @@ label{
 .margenTop{
   margin-top: 1%;
 }
-footer .centro{
-    font-size:12px;
+footer .centro {
+    font-size: 12px;
 }
 
 section{

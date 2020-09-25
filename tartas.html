@@ -4,70 +4,109 @@
 <head>
     <meta charset="utf-8" />
     <title>UNAJ Pastelería - TARTAS</title>
-    <link rel="shortcut icon"href="img/cake.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/cake.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('img').click(function () {
+                $(this).fadeTo('fast', 0.7);
+                $('.column').addClass('resaltarColumn');
+                
+
+                //$('img').click(function () {
+                //    $(this).fadeTo('fast', 1);
+                //    $('.column').removeClass('resaltarColumn');
+                //})
+
+                
+
+            })
+
+        })
+
+                        
+    </script>
+
 </head>
 <body>
 
 
-        <header>
-            <div class="cabecera">
-                <a href="index3.html">
+    <header>
+        <div class="cabecera">
+            <a href="index3.html">
                 <img src="img/cake.png" />
-                </a>      
-                <h1 class="centro">  
-                UNAJ Pastelería       
-                </h1>  
-              </div>
-            </header>
-    
-         <nav>
-            <div >
-                <ul>
-                    <li><a href="pasteles.html">Pasteles </a></li>
-                    <li><a href="tartas.html">Tartas </a></li>
-                    <li><a href="cupcakes.html">Cupcakes </a></li>
-                    <li><a href="postres.html">Postres </a></li>
-                    <li><a href="encuesta.html">Encuesta </a></li>
-    
-                </ul>
-                </div>
-        </nav>
-      
-        <main>
-            <div class="mainAlargado">
+            </a>
+            <h1 class="centro">
+                UNAJ Pastelería
+            </h1>
+        </div>
+    </header>
+
+    <nav>
+        <div>
+            <ul>
+                <li><a href="pasteles.html">Pasteles </a></li>
+                <li><a href="tartas.html">Tartas </a></li>
+                <li><a href="cupcakes.html">Cupcakes </a></li>
+                <li><a href="postres.html">Postres </a></li>
+                <li><a href="encuesta.html">Encuesta </a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="mainAlargado">
             <section>
-                   <div class="titulo">  
-                        <h2>Tartas</h2>
-                    </div> 
-                   
-                </header>
+                <div class="titulo">
+                    <h2>Tartas</h2>
+                </div>
                 <article>
                     <div class="row">
                         <div class="column">
                             <img src="img/tarta.jpg" />
                             <h3>Tartas de chocolate</h3>
+                            <em>120</em>
                         </div>
                         <div class="column">
                             <img src="img/tarta2.jpg" />
                             <h3>Tarta de frutilla</h3>
+                            <em>120</em>
                         </div>
                         <div class="column">
                             <img src="img/tarta3.jpg" />
                             <h3>Tarta cheescake</h3>
+                            <em>120</em>
                         </div>
                     </div>
                 </article>
 
             </section>
-        </div>
-        </main>
-      
-    
-        <footer>
-         <h3 class="centro">   Desarrollado por estudiantes App Moviles. UNAJ 2020 &copy;  </h3>
-        </footer>
 
-       
+            <section>
+                <div class="carrito">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="listado"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="precioTotal">Total: <span id="total"></span>&dollar;</p>
+                    <button id="boton-vaciar">Vaciar</button>
+                </div>
+                
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <h3 class="centro">   Desarrollado por estudiantes App Moviles. UNAJ 2020 &copy;  </h3>
+    </footer>
+
+
 </body>
 </html>

@@ -115,128 +115,132 @@ function validateEmail(email)
 
 
 
-function consumirJson(){
+function consumirJson() {
 
 
-  $.ajax({
-    url: 'http://www.json-generator.com/api/json/get/bVSuwvWvTm?indent=2',
-    success: function(respuesta) {
+    $.ajax({
+        url: 'http://www.json-generator.com/api/json/get/bVSuwvWvTm?indent=2',
+        success: function (respuesta) {
 
 
-      for (var variable in respuesta) {		
+            for (var variable in respuesta) {
 
 
 
-        if (respuesta[variable].id === 1){
+                if (respuesta[variable].id === 1) {
 
-          document.getElementById('categoriaMenu1').innerHTML=  "<li id='categoriaMenu1'><a href='pasteles.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria1').innerHTML= "<div id='categoria1' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion1').innerHTML = respuesta[variable].descripcion;
+                    document.getElementById('categoriaMenu1').innerHTML = "<li id='categoriaMenu1'><a href='pasteles.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria1').innerHTML = "<div id='categoria1' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion1').innerHTML = respuesta[variable].descripcion;
 
+                }
+
+                if (respuesta[variable].id === 2) {
+
+                    document.getElementById('categoriaMenu1').innerHTML = "<li id='categoriaMenu1'><a href='pasteles.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria1').innerHTML = "<div id='categoria1' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion2').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 3) {
+
+                    document.getElementById('categoriaMenu1').innerHTML = "<li id='categoriaMenu1'><a href='pasteles.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria1').innerHTML = "<div id='categoria1' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion3').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 4) {
+
+                    document.getElementById('categoriaMenu2').innerHTML = "<li id='categoriaMenu2'><a href='tartas.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria2').innerHTML = "<div id='categoria2' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion4').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 5) {
+
+                    document.getElementById('categoriaMenu2').innerHTML = "<li id='categoriaMenu2'><a href='tartas.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria2').innerHTML = "<div id='categoria2' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion5').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 6) {
+
+                    document.getElementById('categoriaMenu2').innerHTML = "<li id='categoriaMenu2'><a href='tartas.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria2').innerHTML = "<div id='categoria2' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion6').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 7) {
+
+                    document.getElementById('categoriaMenu3').innerHTML = "<li id='categoriaMenu3'><a href='cupcakes.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria3').innerHTML = "<div id='categoria3' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion7').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 8) {
+
+                    document.getElementById('categoriaMenu3').innerHTML = "<li id='categoriaMenu3'><a href='cupcakes.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria3').innerHTML = "<div id='categoria3' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion8').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 9) {
+
+                    document.getElementById('categoriaMenu3').innerHTML = "<li id='categoriaMenu3'><a href='cupcakes.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria3').innerHTML = "<div id='categoria3' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion9').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 10) {
+
+                    document.getElementById('categoriaMenu4').innerHTML = "<li id='categoriaMenu4'><a href='postres.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria4').innerHTML = "<div id='categoria4' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion10').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 11) {
+
+                    document.getElementById('categoriaMenu4').innerHTML = "<li id='categoriaMenu4'><a href='postres.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria4').innerHTML = "<div id='categoria4' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion11').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+                if (respuesta[variable].id === 12) {
+
+                    document.getElementById('categoriaMenu4').innerHTML = "<li id='categoriaMenu4'><a href='postres.html'>" + respuesta[variable].categoria + "</a></li>"
+                    document.getElementById('categoria4').innerHTML = "<div id='categoria4' class='titulo'><h2>" + respuesta[variable].categoria + "</h2></div>"
+                    document.getElementById('descripcion12').innerHTML = respuesta[variable].descripcion;
+
+                }
+
+
+
+
+
+
+
+            }
+
+        },
+        error: function () {
+            console.log("No se ha podido obtener la información");
         }
-
-        if (respuesta[variable].id === 2){
-
-          document.getElementById('categoriaMenu1').innerHTML=  "<li id='categoriaMenu1'><a href='pasteles.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria1').innerHTML= "<div id='categoria1' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion2').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 3){
-
-          document.getElementById('categoriaMenu1').innerHTML=  "<li id='categoriaMenu1'><a href='pasteles.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria1').innerHTML= "<div id='categoria1' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion3').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 4){
-
-          document.getElementById('categoriaMenu2').innerHTML=  "<li id='categoriaMenu2'><a href='tartas.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria2').innerHTML= "<div id='categoria2' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion4').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 5){
-
-          document.getElementById('categoriaMenu2').innerHTML=  "<li id='categoriaMenu2'><a href='tartas.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria2').innerHTML= "<div id='categoria2' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion5').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 6){
-
-          document.getElementById('categoriaMenu2').innerHTML=  "<li id='categoriaMenu2'><a href='tartas.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria2').innerHTML= "<div id='categoria2' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion6').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 7){
-
-          document.getElementById('categoriaMenu3').innerHTML=  "<li id='categoriaMenu3'><a href='cupcakes.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria3').innerHTML= "<div id='categoria3' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion7').innerHTML = respuesta[variable].descripcion;
-          
-        }
-
-        if (respuesta[variable].id === 8){
-
-          document.getElementById('categoriaMenu3').innerHTML=  "<li id='categoriaMenu3'><a href='cupcakes.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria3').innerHTML= "<div id='categoria3' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion8').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 9){
-
-          document.getElementById('categoriaMenu3').innerHTML=  "<li id='categoriaMenu3'><a href='cupcakes.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria3').innerHTML= "<div id='categoria3' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion9').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 10){
-
-          document.getElementById('categoriaMenu4').innerHTML=  "<li id='categoriaMenu4'><a href='postres.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria4').innerHTML= "<div id='categoria4' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion10').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 11){
-
-          document.getElementById('categoriaMenu4').innerHTML=  "<li id='categoriaMenu4'><a href='postres.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria4').innerHTML= "<div id='categoria4' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion11').innerHTML = respuesta[variable].descripcion;
-
-        }
-
-        if (respuesta[variable].id === 12){
-
-          document.getElementById('categoriaMenu4').innerHTML=  "<li id='categoriaMenu4'><a href='postres.html'>"+respuesta[variable].categoria +"</a></li>"
-          document.getElementById('categoria4').innerHTML= "<div id='categoria4' class='titulo'><h2>"+respuesta[variable].categoria +"</h2></div>"
-          document.getElementById('descripcion12').innerHTML = respuesta[variable].descripcion;
-
-        }
+    });
 
 
-        
-						  
-  
-        
 
-  }
 
-    },
-    error: function() {
-          console.log("No se ha podido obtener la información");
-      }
-  });  
-    
+
     /*
     
     
@@ -265,3 +269,4 @@ function consumirJson(){
     
   });
 */
+}
