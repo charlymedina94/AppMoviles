@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
-<body>
+<body onload="carritoCompras();">
 
         <header>
             <div class="cabecera">
@@ -40,6 +40,17 @@
       
         <main>
 
+
+        <!--CARRITO COMPRAS-->
+        <div class="carritoVerde">
+            <div><h5>Carrito</h5></div>
+            <div id="carrito"> Precio: </div>
+        </div>
+
+
+
+
+
             <div class="mainAlargado">
 
             <section>
@@ -50,16 +61,16 @@
               
                 <article>
                     <div class="row">
-                        <div class="column">
-                            <img src="img/pastel.jpg" />
+                        <div id="columna1" class="column">
+                            <img id="foto1" src="img/pastel.jpg" />
                             <h3>Pastel tradicional</h3>
                         </div>
-                        <div class="column">
-                            <img src="img/pastel2.jpg" />
+                        <div id="columna2" class="column">
+                            <img id="foto2" src="img/pastel2.jpg" />
                             <h3>Pasteles de cumpleaños</h3>
                         </div>
-                        <div class="column">
-                            <img src="img/pastel3.jpg" />
+                        <div id="columna3" class="column">
+                            <img id="foto3" src="img/pastel3.jpg" />
                             <h3>Pasteles de boda</h3>
                         </div>
                     </div>

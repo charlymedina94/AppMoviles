@@ -1,3 +1,5 @@
+
+
 function restablecer(){
     document.getElementById('nombre').value = "";
     document.getElementById('apellido').value = "";
@@ -233,4 +235,76 @@ function consumirJson() {
     });
     
     
+}
+
+colorOriginal1 = true;
+colorOriginal2 = true;
+colorOriginal3 = true;
+precio1 = 0;
+precio2 = 0;
+precio3 = 0;
+
+
+function carritoCompras(){
+  
+  $("#foto1").click(function() {
+    if (colorOriginal1 === true){
+      $("#columna1").css({"background-color":"#e56edb"});
+      $("#foto1").css({"opacity":"0.5"});
+      colorOriginal1 = false;
+      precio1 = 100;
+    }
+    else{
+      $("#columna1").css({"background-color":"burlywood"});
+      $("#foto1").css({"opacity":"1"});
+      colorOriginal1 = true;
+      precio1 = 0;
+    }
+
+    document.getElementById('carrito').innerHTML = "Precio: "+ (precio1 + precio2 + precio3);
+
+  });
+
+  $("#foto2").click(function() {
+    if (colorOriginal2 === true){
+      $("#columna2").css({"background-color":"#e56edb"});
+      $("#foto2").css({"opacity":"0.5"});
+      colorOriginal2 = false;
+      precio2 = 150;
+    }
+    else{
+      $("#columna2").css({"background-color":"burlywood"});
+      $("#foto2").css({"opacity":"1"});
+      colorOriginal2 = true;
+      precio2 = 0;
+    }
+
+    document.getElementById('carrito').innerHTML = "Precio: "+ (precio1 + precio2 + precio3);
+
+  });
+
+  $("#foto3").click(function() {
+
+    if (colorOriginal3 === true){
+      $("#columna3").css({"background-color":"#e56edb"});
+      $("#foto3").css({"opacity":"0.5"});
+      colorOriginal3 = false;
+      precio3 = 200;
+    }
+    else{
+      $("#columna3").css({"background-color":"burlywood"});
+      $("#foto3").css({"opacity":"1"});
+
+      colorOriginal3 = true;
+      precio3 = 0;
+    }
+
+    document.getElementById('carrito').innerHTML = "Precio: "+ (precio1 + precio2 + precio3);
+
+  });
+
+
+
+  //document.getElementById('carrito').innerHTML = "Precio: "+ (precio1 + precio2 + precio3);
+
 }
