@@ -119,12 +119,12 @@ function consumirJson(){
 
 
   $.ajax({
+    type: "GET",
     url: 'http://www.json-generator.com/api/json/get/bVSuwvWvTm?indent=2',
     success: function(respuesta) {
 
       for (var variable in respuesta) {		
-
-
+        
 
         if (respuesta[variable].id === 1){
 
@@ -222,52 +222,14 @@ function consumirJson(){
 
         }
 
-
-        
-						  
-  
-        
-
   }
 
     },
+
     error: function() {
           console.log("No se ha podido obtener la información");
       }
   });
     
     
-    
-    
-    
-    
-    /*
-    
-    
-    type: "GET",
-				url: "http://www.json-generator.com/api/json/get/bVlyIDJSmq?indent=2",
-				dataType: "text",
-				data:mensaje,
-				contentType: "application/json",
-				cache: false,
-				success: function(data) {			
-
-          alert(data);
-          
-					let datosMensaje = JSON.parse(data);	
-                
-          alert(datosMensaje);
-			
-					  for (var variable in datosMensaje) {		
-						  
-              alert(variable);
-						  
-						 
-						
-				}
-    }
-    
-  });
-*/
-
 }
