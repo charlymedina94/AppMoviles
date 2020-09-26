@@ -250,7 +250,7 @@ function carritoCompras(){
     if (colorOriginal1 === true){
       $("#columna1").css({"background-color":"#e56edb"});
         $("#foto1").css({ "opacity": "0.5" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
+       // $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
        
        colorOriginal1 = false;
       precio1 = 100;
@@ -258,7 +258,7 @@ function carritoCompras(){
     else{
       $("#columna1").css({"background-color":"burlywood"});
         $("#foto1").css({ "opacity": "1" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
+       // $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
         
       colorOriginal1 = true;
       precio1 = 0;
@@ -272,14 +272,14 @@ function carritoCompras(){
     if (colorOriginal2 === true){
       $("#columna2").css({"background-color":"#e56edb"});
         $("#foto2").css({ "opacity": "0.5" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
+       // $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
       colorOriginal2 = false;
       precio2 = 150;
     }
     else{
       $("#columna2").css({"background-color":"burlywood"});
         $("#foto2").css({ "opacity": "1" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
+        //$("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
       colorOriginal2 = true;
       precio2 = 0;
     }
@@ -293,14 +293,14 @@ function carritoCompras(){
     if (colorOriginal3 === true){
       $("#columna3").css({"background-color":"#e56edb"});
         $("#foto3").css({ "opacity": "0.5" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
+        //$("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoLleno.png" />');
       colorOriginal3 = false;
       precio3 = 200;
     }
     else{
       $("#columna3").css({"background-color":"burlywood"});
         $("#foto3").css({ "opacity": "1" });
-        $("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
+        //$("#imgCarrito").replaceWith('<img id="imgCarrito" src="img/carritoVacio.png" />');
 
       colorOriginal3 = true;
       precio3 = 0;
@@ -311,6 +311,7 @@ function carritoCompras(){
 
   });
 
+  
 
 
   //document.getElementById('carrito').innerHTML = "Precio: "+ (precio1 + precio2 + precio3);
